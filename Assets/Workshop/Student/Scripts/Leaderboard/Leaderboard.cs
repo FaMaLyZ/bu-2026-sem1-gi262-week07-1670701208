@@ -57,7 +57,7 @@ namespace Searching
             int right = scores.Count - 1;
             while (left <= right)
             {
-                var mid = left + ((left - right) / 2);
+                var mid = left + ((right - left) / 2);
                 if (scores[mid].score == score.score)
                 {
                     index = mid;
